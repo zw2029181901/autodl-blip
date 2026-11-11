@@ -9,7 +9,7 @@
 | AutoDL.Art账号 | 200211（金鳞） |
 | 介绍 | 为图片生成英文描述，可填写英文开头，并下载TXT。 |
 | 服务端口 | 6006 |
-| 启动命令 | bash /root/autodl-blip/start.sh |
+| 本批导出镜像启动命令 | bash /root/autodl-active/run-service.sh |
 | 模型容量 | 约0.99GB；模型及输出预留3GB，依赖另计 |
 | 上游 | https://github.com/salesforce/BLIP |
 | 许可 | BSD-3-Clause（BLIP模型）；Apache-2.0（Transformers） |
