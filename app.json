@@ -1,0 +1,37 @@
+{
+  "id": "08-blip-caption",
+  "slug": "autodl-blip",
+  "name": "BLIP 看图描述",
+  "description": "为图片生成英文描述，可填写英文开头，并下载TXT。",
+  "task": "image-captioning",
+  "requires_gpu": false,
+  "imports": [
+    "torch",
+    "transformers"
+  ],
+  "model_gb": 0.99,
+  "disk_gb": 3,
+  "gpu": "支持CPU或GPU。建议8GB内存起测。",
+  "license": "BSD-3-Clause（BLIP模型）；Apache-2.0（Transformers）",
+  "source": "https://github.com/salesforce/BLIP",
+  "models": {
+    "main": {
+      "kind": "hf",
+      "required_files": ["config.json","pytorch_model.bin","preprocessor_config.json","vocab.txt"],
+      "repo": "Salesforce/blip-image-captioning-base",
+      "revision": "82a37760796d32b1411fe092ab5d4e227313294b",
+      "allow_patterns": [
+        "*.json",
+        "*.txt",
+        "pytorch_model.bin",
+        "LICENSE*",
+        "README.md"
+      ]
+    }
+  },
+  "torch": true,
+  "account": {
+    "github": "zw2029181901",
+    "autodl_user": "200211"
+  }
+}
