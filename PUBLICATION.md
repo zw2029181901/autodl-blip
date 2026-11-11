@@ -1,23 +1,13 @@
-# BLIP 看图描述 发布填写材料
+# BLIP 看图描述 发布资料
 
-| 字段 | 填写内容 |
-|---|---|
-| 显示名称 | BLIP 看图描述 |
-| 仓库名/仅英文镜像名 | autodl-blip |
-| GitHub账号 | zw2029181901 |
-| 拟用项目链接 | https://github.com/zw2029181901/autodl-blip |
-| AutoDL.Art账号 | 200211（金鳞） |
-| 介绍 | 为图片生成英文描述，可填写英文开头，并下载TXT。 |
-| 服务端口 | 6006 |
-| 本批导出镜像启动命令 | bash /root/autodl-active/run-service.sh |
-| 模型容量 | 约0.99GB；模型及输出预留3GB，依赖另计 |
-| 上游 | https://github.com/salesforce/BLIP |
-| 许可 | BSD-3-Clause（BLIP模型）；Apache-2.0（Transformers） |
+- GitHub：zw2029181901/autodl-blip
+- 公开名称：BLIP-Caption
+- 保存镜像：autodl-blip-20261111
+- UUID：image-dad5d1d189
+- 框架：PyTorch 2.8.0，CUDA 12.8
+- 端口：6006；输出等预留磁盘：3GB
+- 启动：`bash /root/autodl-active/run-service.sh`
 
-项目链接见上表。云镜像需先完成真实任务与新实例验收，再提交平台审核；源码已上传不等于云镜像已上线。
+镜像 `autodl-blip-20261111`，UUID `image-dad5d1d189`，平台体积2.18GB，已就绪。社区审核及公开状态以平台当前状态为准。
 
-原创算法/论文：不勾选，上游模型归原作者。
-原创代码：按平台定义如实提交中文界面、部署脚本等增量说明，不因新建自己的仓库就勾选整套模型代码原创。
-收益以平台当前审核及结算规则为准；不承诺上架或收益。
-
-本包是独立Gradio应用。发布社区镜像后，是否成为应用广场APP须走平台对应入口与审核；也不会自动变成由AutoDL部署维护的ComfyUI工作流API。
+README正文见 IMAGE_README.md，具体验收见 IMAGE_VALIDATION.json。第三方模型许可与来源已保留，不将上游模型声明为自研原创算法。
